@@ -35,7 +35,7 @@ class TarefaController {
 
     public function atualizar() {
         if (isset($_POST['id']) && isset($_POST['descricao'])) {
-            $this->tarefaModel->excluir($_GET['id']);
+            $this->tarefaModel->excluir($_GET['id']);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
             $this->tarefaModel->criar($_POST['descricao']);
         }
         header("Location: index.php");
